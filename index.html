@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form id="myForm">
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
+    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
+    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+    <button type="button" id="button" name="button">RAZ</button>
+  </form>
+  <script>
+  //appelle du bouton et création de la function qui appelle tout les id qui ramene la value a 0
+  button.addEventListener('click',function (){
+    document.getElementById('nom').value="";
+    document.getElementById('prenom').value="";
+    document.getElementById('ville').value="";
+})
+  </script>
+</body>
+</html>
